@@ -27,6 +27,10 @@ function addProjectDetails(e) {
 	var idNumber = projectID.substr('project'.length);
 
 	console.log("User clicked on project " + idNumber);
+
+	$('#testjc').click(function(e)){
+		$.get("/project/random", addProject); 
+	}
 }
 
 /*
